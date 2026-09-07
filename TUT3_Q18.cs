@@ -2,66 +2,66 @@ using System;
 
 namespace CalculatorApplication
 {
-    public class EmployeeSlip
+    public class Employee
     {
         public string Name { get; set; }
-        public double Basic { get; set; }
+        public double Salary { get; set; }
 
-        public EmployeeSlip(string name, double basic)
+        public virtual void GenerateSalarySlip()
         {
-            Name = name;
-            Basic = basic;
-        }
-
-        public virtual double CalculateNetSalary()
-        {
-            return Basic;
+            Console.WriteLine("Employee Salary Slip");
         }
     }
 
-    public class PermanentEmployee : EmployeeSlip
-    {
-        public double Pf { get; set; }
-        public PermanentEmployee(string name, double basic, double pf) : base(name, basic)
-        {
-            Pf = pf;
-        }
+    //Derived class 
 
-        public override double CalculateNetSalary()
+    class PermanentEmployee : Employee
+    {
+        public override void GenerateSalarySlip()
         {
-            return Basic - Pf;
+            double hra = Salary * 0.2;
+            double da = Salary * 0.1;
+            double netSalary = Salary + hra + da;
+
+            Console.WriteLine("Permanent Employee Salary Slip");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Employee Name : " + Name);
+            Console.WriteLine("Basic Salary  : " + Salary);
+            Console.WriteLine("HRA           : " + hra);
+            Console.WriteLine("DA            : " + da);
+            Console.WriteLine("Net Salary    : " + netSalary);
         }
     }
 
-    public class ContractEmployee : EmployeeSlip
-    {
-        public double ServiceTax { get; set; }
-        public ContractEmployee(string name, double basic, double tax) : base(name, basic)
-        {
-            ServiceTax = tax;
-        }
+    //Derived class
 
-        public override double CalculateNetSalary()
+    class ContractEmployee : Employee
+    {
+        public override void GenerateSalarySlip()
         {
-            return Basic - ServiceTax;
+            Console.WriteLine("Contract Employee Salary Slip");
+            Console.WriteLine("Employee Name : " + Name);
+            Console.WriteLine("Basic Salary  : " + Salary);
         }
     }
 
-    public class TUT3_Q18
+    class Tut3_Q18
     {
-        public static void Main(string[] args)
+        static void Main()
         {
-            Run();
-        }
+            PermanentEmployee emp = new PermanentEmployee();
 
-        public static void Run()
-        {
-            EmployeeSlip p = new PermanentEmployee("John", 50000, 4000);
-            EmployeeSlip c = new ContractEmployee("Sarah", 35000, 2000);
+            emp.Name = "Sohil";
+            emp.Salary = 50000;
 
-            Console.WriteLine("Permanent Employee: {0}, Net Salary: {1}", p.Name, p.CalculateNetSalary());
-            Console.WriteLine("Contract Employee: {0}, Net Salary: {1}", c.Name, c.CalculateNetSalary());
-            Console.ReadLine();
+            emp.GenerateSalarySlip();
+
+            ContractEmployee emp2 = new ContractEmployee();
+
+            emp2.Name = "Arva";
+            emp2.Salary = 40000;
+
+            emp2.GenerateSalarySlip();
         }
     }
 }
