@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="TUT5_Q1/TUT5_Q1.csproj" />
+  <Project Path="TUT5_Q10/TUT5_Q10.csproj" />
+  <Project Path="TUT5_Q2/TUT5_Q2.csproj" />
+  <Project Path="TUT5_Q3/TUT5_Q3.csproj" />
+  <Project Path="TUT5_Q4/TUT5_Q4.csproj" />
+  <Project Path="TUT5_Q5/TUT5_Q5.csproj" />
+  <Project Path="TUT5_Q6/TUT5_Q6.csproj" />
+  <Project Path="TUT5_Q7/TUT5_Q7.csproj" />
+  <Project Path="TUT5_Q8/TUT5_Q8.csproj" />
+  <Project Path="TUT5_Q9/TUT5_Q9.csproj" />
+</Solution>

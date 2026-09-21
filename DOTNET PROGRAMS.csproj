@@ -118,6 +118,26 @@
     <Compile Include="TUT3_Q24.cs" />
     <Compile Include="TUT3_Q25.cs" />
     <Compile Include="TUT3_Q26.cs" />
+    <Compile Include="TUT4_Q1.cs" />
+    <Compile Include="TUT4_Q2.cs" />
+    <Compile Include="TUT4_Q3.cs" />
+    <Compile Include="TUT4_Q4.cs" />
+    <Compile Include="TUT4_Q5.cs" />
+    <Compile Include="TUT4_Q6.cs" />
+    <Compile Include="TUT4_Q7.cs" />
+    <Compile Include="TUT4_Q8.cs" />
+    <Compile Include="TUT4_Q9.cs" />
+    <Compile Include="TUT4_Q10.cs" />
+    <Compile Include="TUT5_Q1.cs" />
+    <Compile Include="TUT5_Q2.cs" />
+    <Compile Include="TUT5_Q3.cs" />
+    <Compile Include="TUT5_Q4.cs" />
+    <Compile Include="TUT5_Q5.cs" />
+    <Compile Include="TUT5_Q6.cs" />
+    <Compile Include="TUT5_Q7.cs" />
+    <Compile Include="TUT5_Q8.cs" />
+    <Compile Include="TUT5_Q9.cs" />
+    <Compile Include="TUT5_Q10.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
