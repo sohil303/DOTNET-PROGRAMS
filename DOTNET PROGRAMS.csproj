@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Count_number.cs" />
     <Compile Include="data.cs" />
+    <Compile Include="Delegate.cs" />
     <Compile Include="find_elements.cs" />
     <Compile Include="find_small_elements.cs" />
     <Compile Include="Linear_search.cs" />
